@@ -1,0 +1,117 @@
+
+treant horde{toxic, sentinel, steel-infused}
+				
+effigy
+{
+	corrupter{bloodletter, chaosweaver}
+	hexer{chaosweaver, echoist}
+	malediction
+}
+
+crystal-skinned
+{
+	rejunavating{gargantuan, vampiric}
+	permafrost			
+	berserker
+}
+
+temporal bubble
+{
+	hexer{chaosweaver, echoist}				
+	juggernaut			
+	arcane buffer
+}
+
+empowered elements
+{
+	evocationist{flameweaver, frostweaver, stormweaver}	
+	steel-infused			
+	chaosweaver	
+}
+				
+trickster
+{	
+	overcharged			
+	echoist	
+}
+				
+brine king-touched
+{
+	ice prison{permafrost, sentinel}
+	storm strider{stormweaver, hasted}
+	heralding minions{dynamo, arcane buffer}
+}
+				
+arakali-touched
+{
+	corpse detonater
+	{
+		necromancer{bombardier, overcharged}
+		incendiary
+	}
+	
+	assassin{deadeye, vampiric}
+	entangler{toxic, bloodletter}
+}
+				
+kitava-touched
+{
+	abberath-touched
+	{
+		flame strider{flameweaver, hasted}
+		rejuvenating{gargantuan, vampiric}
+		frenzied
+	}
+	tukohama-touched
+	{
+		executioner{frenzied, berserker}
+		magma barrier{incendiary, bonebreaker}
+		bonebreaker
+	}
+	corpse detonator
+	{
+		necromancer{bombardier, overcharged}
+		incendiary
+	}
+	corrupter{bloodletter, chaosweaver}
+}
+				
+shakari-touched
+{
+	soul eater
+	{
+		necromancer{bombardier, overcharged}
+		soul conduit		
+		gargantuan
+	}
+	entangler{toxic, bloodletter}
+	drought bringer{malediction, deadeye}
+}
+
+innocence-touched
+{
+	lunaris-touched
+	{
+		empowering minions
+		{
+			necromancer{bombardier, overcharged}
+			executioner{frenzied, berserker}
+			gargantuan
+		}
+		invulnerable{sentinel, juggernaut, consecrator}
+		frost strider{frostweaver, hasted}
+	}
+	solaris-touched
+	{
+		empowering minions
+		{
+			necromancer{bombardier, overcharged}
+			executioner{frenzied, berserker}
+			gargantuan
+		}
+		invulnerable{sentinel, juggernaut, consecrator}
+		magma barrier{incendiary, bonebreaker}
+	}
+	mirror image{echoist, soul conduit}
+	mana siphoner{consecrator, dynamo}
+}

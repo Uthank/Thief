@@ -1,0 +1,39 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Player : MonoBehaviour
+{
+    [SerializeField] private float _speed = 4;
+
+    Rigidbody2D _rigidbody2D;
+    SpriteRenderer _spriteRenderer;
+    Animator _animator;
+    private Vector2 _movement = new Vector2(0,0);
+
+    void Start()
+    {
+        _rigidbody2D = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+    void Update()
+    {
+        _movement.x = 0;
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            _movement.x = -1;
+            _spriteRenderer.flipX = true;
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            _movement.x = 1;
+            _spriteRenderer.flipX = false;
+        }
+
+        _animator.SetFloat("Speed", Mathf.Abs(_movement.x));
+        _rigidbody2D.position += _movement * _speed * Time.deltaTime;
+    }
+}
