@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Animator))]
-[RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(SpriteRenderer))]
 
 public class Player : MonoBehaviour
 {
@@ -14,6 +12,7 @@ public class Player : MonoBehaviour
     Rigidbody2D _rigidbody2D;
     SpriteRenderer _spriteRenderer;
     Animator _animator;
+    private const string _animationSpeed = "Speed";
     private Vector2 _movement = new Vector2(0,0);
 
     void Start()
@@ -38,7 +37,7 @@ public class Player : MonoBehaviour
             _spriteRenderer.flipX = false;
         }
 
-        _animator.SetFloat("Speed", Mathf.Abs(_movement.x));
+        _animator.SetFloat(_animationSpeed, Mathf.Abs(_movement.x));
         _rigidbody2D.position += _movement * _speed * Time.deltaTime;
     }
 }
