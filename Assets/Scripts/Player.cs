@@ -8,9 +8,9 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private float _speed = 4;
 
-    Rigidbody2D _rigidbody2D;
-    SpriteRenderer _spriteRenderer;
-    Animator _animator;
+    private Rigidbody2D _rigidbody2D;
+    private SpriteRenderer _spriteRenderer;
+    private Animator _animator;
     private Vector2 _movement = new Vector2(0,0);
     
     private const string AnimationSpeed = "Speed";
@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
+
     void Update()
     {
         _movement.x = 0;
